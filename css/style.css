@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: monospace;
+    font-family: arial;
 }
 .container{
     width: 80%;
@@ -20,23 +20,27 @@
 p{
     font-size: 16px;
     margin: 20px 0;
+    line-height: 1.5;
 }
 
 /* common css style ---------------- */
 
 header{
-    background-image: url(/images/banner/banner3.png);
+    background-image: url(images/banner/banner3.png);
+    background-position: center;
+    background-size: cover;
     height: 100vh;
     
 }
 .header{
     height: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px , 500px));
     justify-content: right;
     align-items: center;
 }
 .deader-item{
-    width: 40%;
+    /* width: 40%; */
     text-align: right;
 }
 .deader-item h1{
@@ -54,7 +58,7 @@ header{
 
 .blog{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
     grid-gap: 30px;
     align-items: center;
     justify-content: space-between;
@@ -64,8 +68,79 @@ header{
     font-size: 40px;
 }
 .blog img{
-    width: 550px;
+    width: 100%;
 }
 .blog-text p{
     text-align: justify;
+}
+.blog-text ul li{
+    list-style: none;
+    line-height: 2;
+}
+.blog-text ul li i{
+    color: #16D887;
+}
+/*----  end of blogs css style -------------------- */
+
+.plan-heading{
+    font-size: 50px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.plans{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(200px , 1fr));
+    grid-gap: 20px;
+}
+.plan-item{
+    text-align: center;
+}
+
+.plan-item h2{
+    margin-top: 15px;
+}
+.plan-item p{
+    font-weight: 600;
+    color:#737272 ;
+}
+/*----  end of plans css style -------------------- */
+
+
+.contact{
+    background-image:linear-gradient(to right, #005FAC , #005fac1f), url(images/watch.png) ;
+    background-size: cover;
+    border-radius: 10px;
+    height: 250px;
+    padding: 40px;
+    color: #fff;
+    margin: 50px auto;
+    background-position: center;
+}
+ 
+.contact h2{
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+/*----  end of contact css style -------------------- */
+
+footer{
+    padding: 40px;
+    background: #000;
+    color: #fff;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
+    grid-gap: 40px;
+}
+.footer-item input{
+    display: block;
+    padding: 15px 10px;
+    width: 100%;
+    background: none;
+    border: 2px solid #737272;
+    border-radius: 5px;
+    margin: 20px 0; 
 }
