@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.btn{
+    padding: 10px 30px;
+    font-size: 15px;
+    border: none;
+    background: orange;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+p{
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+/* common css style ---------------- */
+
+header{
+    background-image: url(/images/banner/banner3.png);
+    height: 100vh;
+    
+}
+.header{
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.deader-item{
+    width: 40%;
+    text-align: right;
+}
+.deader-item h1{
+    font-size: 50px;
+    color: #fff;
+}
+.deader-item p{
+    color: rgb(211, 211, 211);
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/*----  end of header css style -------------------- */
+
+
+.blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.blog-text h2{
+    font-size: 40px;
+}
+.blog img{
+    width: 550px;
+}
+.blog-text p{
+    text-align: justify;
+}
