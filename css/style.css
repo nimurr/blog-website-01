@@ -26,7 +26,7 @@ p{
 /* common css style ---------------- */
 
 header{
-    background-image: url(images/banner/banner3.png);
+    background-image: url(../images/banner/banner3.png);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -109,7 +109,7 @@ header{
 
 
 .contact{
-    background-image:linear-gradient(to right, #005FAC , #005fac1f), url(images/watch.png) ;
+    background-image:linear-gradient(to right, #005FAC , #005fac1f), url(../images/watch.png) ;
     background-size: cover;
     border-radius: 10px;
     height: 250px;
